@@ -1,0 +1,1071 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 115px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 12px;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  gap: 8px;
+}
+header nav ul {
+  display: flex;
+  gap: 40px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 28px;
+}
+header nav button {
+  background: none;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+header .burger {
+  display: none;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 100%;
+  padding: 10px;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  border: 0;
+}
+header .burger .line {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  overflow-x: visible;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-top: 70px;
+}
+#about .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+#about .content h1 {
+  color: black;
+  font-family: Roboto;
+  font-size: 72px;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 82.5px;
+  letter-spacing: 2px;
+}
+#about .content h1 span {
+  color: #ff8a56;
+}
+#about .content p {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+}
+#about .content .btns {
+  display: flex;
+  gap: 10px;
+}
+#about .content .btns button {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  cursor: pointer;
+}
+#about .content .btns .black {
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+}
+#about .content .btns .white {
+  padding: 20px 30px;
+  background-color: white;
+  color: black;
+}
+#about img {
+  width: 500px;
+  height: 595px;
+  flex-shrink: 0;
+}
+
+#trusted-by {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+#trusted-by span {
+  color: black;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 18px;
+  overflow: hidden;
+}
+#trusted-by .logos {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 115px;
+  padding: 50px 0;
+}
+#services .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#services .title span {
+  color: #ff5e69;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+#services .title h1 {
+  color: black;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  text-align: center;
+  overflow: hidden;
+}
+#services .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+#services .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 25px;
+}
+#services .cards .card h3 {
+  color: black;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+  overflow: hidden;
+}
+#services .cards .card p {
+  color: #666666;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 28px;
+}
+#services .cards .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+#services .cards .card ul li {
+  color: black;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#services .cards .card ul li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: black;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+  overflow-x: visible;
+  position: relative;
+}
+#projects .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#projects .title .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#projects .title .content span {
+  color: #b16cea;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+#projects .title .content h1 {
+  color: black;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+#projects .title button {
+  background-color: black;
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+#projects .slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 26px;
+  overflow-x: visible;
+  position: relative;
+  z-index: 2;
+}
+#projects .slider .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  overflow-x: visible;
+  transform: translateX(150px);
+}
+#projects .slider .cards .card {
+  display: flex;
+  flex-direction: column;
+}
+#projects .slider .cards .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 33px;
+  background-color: white;
+}
+#projects .slider .cards .card .content h6 {
+  color: #3c46ff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  overflow: visible;
+}
+#projects .slider .cards .card .content h4 {
+  color: black;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+  overflow: visible;
+}
+#projects .slider .cards .card .content button {
+  border: 0;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  align-self: flex-start;
+  cursor: pointer;
+}
+#projects .slider .btns {
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+#projects .slider .btns button {
+  border: 0;
+  background-color: white;
+  padding: 20px 22px;
+  cursor: pointer;
+}
+#projects::after {
+  content: "";
+  width: 1440px;
+  height: 360px;
+  background-color: black;
+  position: absolute;
+  bottom: -100px;
+  z-index: 1;
+}
+
+#blogs {
+  background-color: black;
+  padding: 0 115px;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 144px;
+}
+#blogs button {
+  align-self: start;
+  padding: 12px 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: 0;
+}
+#blogs .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#blogs .left span {
+  color: #ffa84b;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  overflow: visible;
+}
+#blogs .left h1 {
+  color: white;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  overflow: visible;
+}
+#blogs .right {
+  display: flex;
+  flex-direction: column;
+  width: 57.3%;
+  gap: 74px;
+  align-items: stretch;
+}
+#blogs .right .news {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-bottom: 36px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+#blogs .right .news span {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  display: flex;
+  gap: 14px;
+  overflow: visible;
+}
+#blogs .right .news h3 {
+  color: white;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  max-width: 70%;
+}
+#blogs .right .news button {
+  padding: 13px 0;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#product .content {
+  padding: 80px 0 115px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#product .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: visible;
+}
+#product .content .title span {
+  color: #ff5e69;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  overflow: visible;
+}
+#product .content .title h1 {
+  color: black;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  overflow: visible;
+}
+#product .content .text {
+  width: 625px;
+}
+#product .content .text p {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+#product .foto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 80px;
+}
+#product .foto .three {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#education {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 49px;
+  padding-bottom: 115px;
+}
+#education .title {
+  color: black;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+#education h4 {
+  color: black;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#education h4 span {
+  padding: 0;
+}
+#education span {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 60px;
+}
+#education .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+#education .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 39px;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+}
+#education .right, #education .left {
+  display: flex;
+  flex-direction: column;
+  gap: 83px;
+}
+#education .right {
+  width: 583px;
+}
+#education .right .card {
+  border-bottom: 2px solid #e5e5e5;
+  width: 100%;
+}
+#education .withlogo {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border: 0;
+  background-color: white;
+  border-bottom: 2px solid #e5e5e5;
+}
+#education .withlogo .logo {
+  padding-right: 20px;
+}
+#education .withlogo .card {
+  width: 513px;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 160px;
+}
+#testimonials .text {
+  color: #4353ff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#testimonials h1 {
+  color: black;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  padding-bottom: 85px;
+}
+#testimonials .fototext {
+  display: flex;
+  flex-direction: row;
+  gap: 146px;
+  justify-content: center;
+}
+#testimonials .fototext .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+#testimonials .fototext .content p {
+  color: black;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46.8px;
+}
+#testimonials .fototext .content .infa {
+  margin-top: 77px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#testimonials .fototext .content .infa .title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#testimonials .fototext .content .infa .title h4 {
+  color: black;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+#testimonials .fototext .content .infa .title .founder {
+  color: black;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+#testimonials .fototext .content .infa .strelki {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+#testimonials .fototext .content .infa .strelki button {
+  background-color: black;
+  padding: 20px 23px;
+  cursor: pointer;
+  border: 0;
+}
+
+footer {
+  background-color: black;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: visible;
+}
+
+#faq {
+  padding-top: 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 72px;
+}
+#faq span {
+  color: #ff8a56;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#faq h1 {
+  color: white;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  padding-bottom: 102px;
+}
+#faq .columns {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+#faq .columns .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#faq .columns .cards .card {
+  width: 583px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0;
+  border-bottom: 2px solid rgba(229, 229, 229, 0.3);
+  padding-bottom: 50px;
+  background-color: black;
+  cursor: pointer;
+}
+#faq .columns .cards .card h3 {
+  color: white;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  letter-spacing: 0.3px;
+}
+
+#kickass {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 178px 113px 21px;
+}
+#kickass h1 {
+  color: white;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 1px;
+  padding-bottom: 9px;
+}
+#kickass h2 {
+  color: #3c46ff;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 59.4px;
+  letter-spacing: 0.5px;
+  padding-bottom: 98px;
+}
+#kickass .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#kickass .info .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#kickass .info .contacts span {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-top: 7px;
+}
+#kickass .info .contacts .email {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+#kickass .info .contacts .email h4 {
+  color: #5c5c5c;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 36px;
+}
+#kickass .info .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 109px;
+  padding-bottom: 138px;
+}
+#kickass .info .nav .column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+}
+#kickass .info .nav .column a {
+  color: white;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration-line: none;
+}
+#kickass .footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#kickass .footer span {
+  color: #8a95ad;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 0 115px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    overflow: visible;
+  }
+
+  #about {
+    display: flex;
+  }
+  #about .content h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #about .content h1 span {
+    overflow: visible;
+  }
+  #about img {
+    display: none;
+  }
+
+  #trusted-by {
+    width: 100%;
+  }
+  #trusted-by .logos {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  #projects .slider {
+    align-items: start;
+  }
+  #projects .slider .cards {
+    transform: unset;
+  }
+
+  #blogs {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  #blogs .left {
+    align-self: start;
+  }
+  #blogs .right .news {
+    align-items: center;
+    text-align: center;
+  }
+  #blogs .right .news button {
+    align-self: center;
+  }
+
+  #product {
+    width: 100vw;
+  }
+  #product .content {
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+  #product .foto .three {
+    display: none;
+  }
+
+  #education {
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+  }
+  #education span {
+    overflow: visible;
+  }
+  #education h4 {
+    overflow: visible;
+  }
+
+  #testimonials .fototext {
+    gap: 100px;
+  }
+  #testimonials img {
+    width: 242, 5px;
+    height: 225px;
+  }
+
+  #faq .columns {
+    flex-direction: column;
+  }
+
+  #kickass {
+    justify-content: center;
+    align-items: center;
+  }
+  #kickass .info {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav, header button {
+    display: none;
+  }
+  header .burger {
+    display: flex;
+  }
+
+  #about .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #trusted-by .logos {
+    flex-wrap: wrap;
+    gap: 20px 60px;
+    justify-content: center;
+  }
+
+  #services .cards {
+    flex-direction: column;
+  }
+  #services .cards .card {
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  #projects .title {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #product .content {
+    justify-content: center;
+    align-items: center;
+  }
+  #product .content .text {
+    width: 500px;
+  }
+  #product .one {
+    display: none;
+  }
+
+  #education .right, #education .left {
+    width: 500px;
+  }
+
+  #testimonials img {
+    display: none;
+  }
+
+  #faq span {
+    overflow: visible;
+  }
+  #faq h1 {
+    width: 500px;
+    text-align: center;
+  }
+  #faq .columns .cards .card {
+    width: 500px;
+    text-align: left;
+  }
+
+  #kickass h1 {
+    width: 500px;
+    text-align: center;
+  }
+  #kickass .info {
+    align-items: center;
+  }
+  #kickass .info .nav {
+    gap: 60px;
+  }
+  #kickass .info .nav .column {
+    align-items: center;
+  }
+  #kickass .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #product .content {
+    justify-content: center;
+    align-items: center;
+  }
+  #product .content .text {
+    width: 250px;
+  }
+  #product .foto {
+    display: none;
+  }
+
+  #education .right, #education .left {
+    width: 300px;
+  }
+  #education .card {
+    text-align: left;
+  }
+  #education .card span span {
+    display: none;
+  }
+  #education .logo {
+    display: none;
+  }
+
+  #testimonials .fototext .content {
+    width: 100%;
+  }
+
+  #faq h1 {
+    width: 300px;
+  }
+  #faq .columns .cards .card {
+    width: 300px;
+    text-align: left;
+  }
+
+  #kickass h1 {
+    width: 300px;
+  }
+  #kickass h2 {
+    width: 300px;
+    text-align: center;
+  }
+  #kickass .info .nav {
+    gap: 30px;
+  }
+}
